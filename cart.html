@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Glowtle</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <header>
+    <h1>Glowtle Official</h1>
+  </header>
+
+  <div class="container">
+    <h1>🛒 Your Cart</h1>
+    <div id="cart-items"></div>
+    <div class="total" id="total-price">Total: Rs 0</div>
+
+    <div class="form">
+      <form id="orderForm" action="https://formspree.io/f/mzzvelao" method="POST">
+        <input type="text" name="Full Name" id="name" placeholder="Full Name *" required />
+        <input type="text" name="Address" id="address" placeholder="Address *" required />
+        <input type="email" name="Email" id="email" placeholder="Email *" required />
+        <input type="tel" name="Phone" id="phone" placeholder="Phone Number *" required />
+        <input type="text" name="Landmark" id="landmark" placeholder="Landmark (optional)" />
+        <input type="text" name="Postal Code" id="postal" placeholder="Postal Code (optional)" />
+
+        <!-- Hidden fields -->
+        <input type="hidden" name="Cart Details" id="cartItemsField">
+        <input type="hidden" name="Total Amount" id="totalAmountField">
+
+      <div class="payment-option">
+  <table class="payment-option"><tr>
+<td><input type="radio" name="payment" id="cash"></td>
+<td><label for="cash">Cash on Delivery</label></td>
+</tr></table>
+        </div>
+
+        <div class="buttons">
+        
+          <button type="submit" id="checkout">Checkout</button>
+          <button type="button" id="clear">Clear Cart</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glowtle - Skincare that glows with you.">
+  <title>Glowtle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="top" class="hero">
+    <img src="assets/banner.glowtle.png" alt="Glowtle Cover" />
+  </section>
+
+  <header>
+    <div class="nav-links">
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="shop" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="assets/facewash.jpg" alt="Face Wash" />
+        <h3>Face Wash</h3>
+        <p><span class="cut-price">Rs. 1299</span> <br> <strong>Rs. 1117</strong></p>
+        <button onclick="addToCart({ id: 'p1', name: 'Face Wash', price: 1117, image: 'assets/facewash.jpg', quantity: 1 })">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="assets/Vitamin C serum.jpg" alt="Vitamin C Serum" />
+        <h3>Vitamin C Serum</h3>
+        <p><span class="cut-price">Rs. 1299</span> <br> <strong>Rs. 1117</strong></p>
+        <button onclick="addToCart({ id: 'p2', name: 'Vitamin C Serum', price: 1117, image: 'assets/Vitamin C serum.jpg', quantity: 1 })">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="assets/Acne Cream.jpg" alt="Acne Cream" />
+        <h3>Acne Cream</h3>
+        <p><span class="cut-price">Rs. 1299</span> <br> <strong>Rs. 1117</strong></p>
+        <button onclick="addToCart({ id: 'p3', name: 'Acne Cream', price: 1117, image: 'assets/Acne Cream.jpg', quantity: 1 })">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="assets/Sunglow Gel.jpg" alt="Sunglow Gel" />
+        <h3>Sunglow Gel</h3>
+        <p><span class="cut-price">Rs. 1299</span> <br> <strong>Rs. 1117</strong></p>
+        <button onclick="addToCart({ id: 'p4', name: 'Sunglow Gel', price: 1117, image: 'assets/Sunglow Gel.jpg', quantity: 1 })">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="assets/Moisturizer.jpg" alt="Moisturizer" />
+        <h3>Moisturizer</h3>
+        <p><span class="cut-price">Rs. 1299</span> <br> <strong>Rs. 1117</strong></p>
+        <button onclick="addToCart({ id: 'p5', name: 'Moisturizer', price: 1117, image: 'assets/Moisturizer.jpg', quantity: 1 })">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <h2>About Glowtle</h2>
+    <p>Glowtle is a premium skincare brand designed to bring natural beauty with gentle and effective ingredients. Backed by dermatologists and loved by thousands.</p>
+  </section>
+  <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <div class="social-links">
+      <a href="https://wa.me/923281399789" target="_blank" title="WhatsApp">
+        <img src="assets/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="mailto:glowtleskincare@gmail.com" title="Email">
+        <img src="assets/mail.png" alt="Email">
+      </a>
+      <a href="https://www.instagram.com/glowtleofficial" target="_blank" title="Instagram">
+        <img src="assets/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/share/1GuECCMJNq/" target="_blank" title="Facebook">
+        <img src="assets/facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </div>
+</section>
+ 
+
+
+  <a href="cart.html" class="cart-button">
+  🛒 Cart
+  <span id="cart-count">0</span>
+</a>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 Glowtle Skincare by The Hamza Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
